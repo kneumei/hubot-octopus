@@ -1,0 +1,28 @@
+{
+  "name": "hubot-octopus",
+  "version": "0.0.1",
+  "description": "A Hubot adapter for Octopus Deploy",
+  "main": "./src/octopus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kneumei/hubot-octopus"
+  },
+  "keywords": [
+    "octopus",
+    "deploy",
+    "hubot"
+  ],
+  "author": {
+    "name": "Kyle Neumeier",
+    "email": "kneumei@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kneumei/hubot-octopus/issues"
+  },
+  "homepage": "https://github.com/kneumei/hubot-octopus",
+  "dependencies": {
+    "q": "^1.0.1",
+    "underscore": "^1.6.0"
+  }
+}
