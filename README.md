@@ -1,4 +1,4 @@
 hubot-octopus
 =============
 
-An Octopus Deploy adapter for Hubto
+An Octopus Deploy adapter for Hubot
