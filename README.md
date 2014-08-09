@@ -4,9 +4,10 @@ An Octopus Deploy adapter for Hubot
 
 ## Installation
 
-Assuming that you've already installed hubot,
+Assuming that you've already installed hubot:
+
 1. `npm install hubot-octopus --save`
-2. Add `hubot-octopus` to your `external-scripts.json`
+2. Add `"hubot-octopus"` to your `external-scripts.json`
 
 ##Usage
 
