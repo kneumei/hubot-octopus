@@ -28,6 +28,7 @@ deployRelease = (robot, release, environment) ->
     Comments: "Deployed from Hubot"
     EnvironmentId: environment.Id
     ReleaseId: release.Id
+    ForcePackageRedeployment: true
 
   createHTTPCall(robot, "/api/deployments")
   .post(JSON.stringify(deployment)) (err, res, body) ->
