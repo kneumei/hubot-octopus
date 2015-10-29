@@ -28,6 +28,7 @@ deployRelease = (robot, release, environment) ->
     Comments: "Deployed from Hubot"
     EnvironmentId: environment.Id
     ReleaseId: release.Id
+    ForcePackageRedeployment: true
 
   createHTTPCall(robot, "/api/deployments")
   .post(JSON.stringify(deployment)) (err, res, body) ->
@@ -122,10 +123,10 @@ module.exports = (robot) ->
               if item
                 enviro = _.find(data.Environments, (env) -> env.Id == item.EnvironmentId)
                 tabset = enviro.Name.length > "\t" ? " : \t" : " : \t\t"
-                formata = "\n  > %s\t\t : %s - %s"
-                formatb = "\n  > %s\t : %s - %s"
+                formata = "\n  > %s\t\t : %s - %s - Completed on: %s"
+                formatb = "\n  > %s\t : %s - %s - Completed on: %s"
                 format = if enviro.Name.length >= 5 then formatb else formata
-                m = m + util.format(format, enviro.Name, item.ReleaseVersion, item.State)
+                m = m + util.format(format, enviro.Name, item.ReleaseVersion, item.State, item.CompletedTime)
           else
             m = m + "\n  > No Deployments"
       msg.send m
