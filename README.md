@@ -24,6 +24,6 @@ Promoted 2.5.202.5 from Test to QA
 ### OCTOPUS_URL_BASE
 This environment variable is the base of your octopus installation. For example, `http://octopus.yourcompany.com`
 
-### OCTOPUS_API_KEY
+### OCTOPUS_KEY
 The octopus api key needed to call the octopus API
 
