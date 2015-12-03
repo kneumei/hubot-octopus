@@ -2,7 +2,7 @@
   "name": "hubot-octopus",
   "version": "0.0.1",
   "description": "A Hubot adapter for Octopus Deploy",
-  "main": "./src/octopus",
+  "main": "index.coffee",
   "repository": {
     "type": "git",
     "url": "https://github.com/kneumei/hubot-octopus"
